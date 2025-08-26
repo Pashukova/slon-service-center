@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет | Сервисный центр "Слон"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="img/logo-white.png" alt="Сервисный центр Слон" class="logo">
+            </a>
+            <div class="contact-header">
+                <a href="tel:+74236605245">
+                    <i class="fas fa-phone"></i> +7 (4236) 60-52-45
+                </a>
+                <a href="index.html#contacts">
+                    <i class="fas fa-map-marker-alt"></i> Находка
+                </a>
+                <a href="#" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Выйти
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav>
+        <div class="nav-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+                <li><a href="#" id="openBookingModalNav">Записаться</a></li>
+                <li><a href="account.html" class="active">Личный кабинет</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Личный кабинет -->
+    <section class="account-section">
+        <div class="account-container">
+            <div class="account-sidebar">
+                <ul class="account-nav">
+                    <li><a href="#" class="active" data-tab="profile">Профиль</a></li>
+                    <li><a href="#" data-tab="orders">Мои заявки</a></li>
+                    <li><a href="#" data-tab="devices">Мои устройства</a></li>
+                    <li><a href="#" data-tab="settings">Настройки</a></li>
+                </ul>
+            </div>
+            
+            <div class="account-content">
+                <!-- Вкладка профиля -->
+                <div class="account-tab" id="profileTab">
+                    <div class="account-header">
+                        <img src="img/user-avatar.jpg" alt="Аватар пользователя" class="account-avatar">
+                        <div class="account-info">
+                            <h2>Кирилл</h2>
+                            <p>Клиент с 23 мая 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="account-details">
+                        <h3>Контактная информация</h3>
+                        <div class="detail-item">
+                            <strong>Email:</strong> kirill@gmail.com
+                        </div>
+                        <div class="detail-item">
+                            <strong>Телефон:</strong> +7 (984) 159-67-75
+                        </div>
+                        <div class="detail-item">
+                            <strong>Адрес:</strong> г. Находка, ул. Ленина, д. 10, кв. 25
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Вкладка заявок -->
+                <div class="account-tab" id="ordersTab" style="display: none;">
+                    <h2>Мои заявки на ремонт</h2>
+                    
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Дата</th>
+                                <th>Услуга</th>
+                                <th>Устройство</th>
+                                <th>Статус</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#12345</td>
+                                <td>15.03.2024</td>
+                                <td>Замена экрана</td>
+                                <td>iPhone 12</td>
+                                <td><span class="order-status status-completed">Завершено</span></td>
+                                <td>5 900 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>#12344</td>
+                                <td>10.02.2024</td>
+                                <td>Чистка после воды</td>
+                                <td>Samsung Galaxy S21</td>
+                                <td><span class="order-status status-completed">Завершено</span></td>
+                                <td>3 200 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>#12343</td>
+                                <td>05.01.2024</td>
+                                <td>Замена батареи</td>
+                                <td>iPhone X</td>
+                                <td><span class="order-status status-completed">Завершено</span></td>
+                                <td>2 500 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Вкладка устройств -->
+                <div class="account-tab" id="devicesTab" style="display: none;">
+                    <h2>Мои устройства</h2>
+                    
+                    <div class="device-list">
+                        <div class="device-card">
+                            <div class="device-info">
+                                <h3>iPhone 12</h3>
+                                <p>Добавлено: 15.03.2025</p>
+                                <p>IMEI: 123456789012345</p>
+                            </div>
+                            <button class="btn-service">История ремонтов</button>
+                        </div>
+                        
+                        <div class="device-card">
+                            <div class="device-info">
+                                <h3>Samsung Galaxy S21</h3>
+                                <p>Добавлено: 10.02.2023</p>
+                                <p>IMEI: 987654321098765</p>
+                            </div>
+                            <button class="btn-service">История ремонтов</button>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-btn" style="margin-top: 1.5rem;">Добавить устройство</button>
+                </div>
+                
+                <!-- Вкладка настроек -->
+                <div class="account-tab" id="settingsTab" style="display: none;">
+                    <h2>Настройки аккаунта</h2>
+                    
+                    <form id="accountSettingsForm">
+                        <div class="form-group">
+                            <label for="settingsName">Имя</label>
+                            <input type="text" id="settingsName" class="form-control" value="Кирилл Симанович" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="settingsEmail">Email</label>
+                            <input type="email" id="settingsEmail" class="form-control" value="kirill@gmail.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="settingsPhone">Телефон</label>
+                            <input type="tel" id="settingsPhone" class="form-control" value="+7 (984) 1596775" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="settingsAddress">Адрес</label>
+                            <input type="text" id="settingsAddress" class="form-control" value="г. Находка, ул. Ленина, д. 10, кв. 25">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Сохранить изменения</button>
+                    </form>
+                    
+                    <div class="password-change" style="margin-top: 2rem;">
+                        <h3>Смена пароля</h3>
+                        <form id="passwordChangeForm">
+                            <div class="form-group">
+                                <label for="currentPassword">Текущий пароль</label>
+                                <input type="password" id="currentPassword" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newPassword">Новый пароль</label>
+                                <input type="password" id="newPassword" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmNewPassword">Подтвердите новый пароль</label>
+                                <input type="password" id="confirmNewPassword" class="form-control" required>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Изменить пароль</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="img/logo-white.png" alt="Сервисный центр Слон">
+                </div>
+                <p>Сервисный центр "Слон" - профессиональный ремонт техники в Находке с 2015 года. Мы используем только качественные комплектующие и даем гарантию на все виды работ.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> ТРЦ Находка Мега, 3 этаж</p>
+                <p  style="color: white;"><i class="fas fa-phone"></i> <a href="tel:+74236605245"  style="color: white;">+7 (4236) 60-52-45</a></p>
+                <p  style="color: white;"><i class="fas fa-envelope"></i> <a href="mailto:info@slon-service.ru"  style="color: white;">info@slon-service.ru</a></p>
+                <p><i class="fas fa-clock"></i> Пн-Пт: 10:00-20:00, Сб-Вс: 10:00-18:00</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Сервисный центр "Слон". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Переключение вкладок в личном кабинете
+        const tabLinks = document.querySelectorAll('.account-nav a');
+        const tabs = document.querySelectorAll('.account-tab');
+        
+        tabLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Убираем активный класс у всех ссылок
+                tabLinks.forEach(l => l.classList.remove('active'));
+                // Добавляем активный класс текущей ссылке
+                link.classList.add('active');
+                
+                // Скрываем все вкладки
+                tabs.forEach(tab => tab.style.display = 'none');
+                // Показываем нужную вкладку
+                const tabId = link.dataset.tab + 'Tab';
+                document.getElementById(tabId).style.display = 'block';
+            });
+        });
+
+        // Формы в личном кабинете
+        document.getElementById('accountSettingsForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Изменения сохранены успешно!');
+        });
+        
+        document.getElementById('passwordChangeForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Пароль изменен успешно!');
+            document.getElementById('passwordChangeForm').reset();
+        });
+
+        // Выход из аккаунта
+        document.getElementById('logoutBtn').addEventListener('click', (e) => {
+            e.preventDefault();
+            if (confirm('Вы уверены, что хотите выйти?')) {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>

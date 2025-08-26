@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервисный центр "Слон" - Профессиональный ремонт техники в Находке</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="img/logo-white.png" alt="Сервисный центр Слон" class="logo">
+            </a>
+            <div class="contact-header">
+                <a href="tel:+74236605245">
+                    <i class="fas fa-phone"></i> +7 (4236) 60-52-45
+                </a>
+                <a href="#contacts">
+                    <i class="fas fa-map-marker-alt"></i> Находка
+                </a>
+                <a href="#" id="openLoginModal">
+                    <i class="fas fa-user"></i> Войти
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav>
+        <div class="nav-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="u.html#services">Услуги</a></li>
+                <li><a href="o.html#about">О нас</a></li>
+                <li><a href="ot.html#reviews">Отзывы</a></li>
+                <li><a href="f.html#faq">FAQ</a></li>
+                <li><a href="k.html#contacts">Контакты</a></li>
+                <li><a href="#" id="openBookingModalNav">Записаться</a></li>
+                <li><a href="account.html" id="accountLink" style="display: none;">Личный кабинет</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Профессиональный ремонт техники в Находке</h1>
+            <p>Быстро, качественно, с гарантией до 1 года</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" id="openBookingModalHero">Записаться онлайн</a>
+                <a href="tel:+74236605245" class="btn btn-secondary">Позвонить сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Наши услуги</h2>
+        </div>
+        <div class="service-grid">
+            <!-- Карточка услуги 1 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="img/iphone-repair.jpg" alt="Ремонт iPhone">
+                </div>
+                <div class="service-content">
+                    <h3>Ремонт iPhone</h3>
+                    <div class="price">от 1500 руб.</div>
+                    <ul class="service-features">
+                        <li>Бесплатная диагностика</li>
+                        <li>Оригинальные запчасти</li>
+                        <li>Гарантия 6 месяцев</li>
+                        <li>Ремонт за 30-60 минут</li>
+                    </ul>
+                    <a href="#" class="btn-service" data-service="Ремонт iPhone">Записаться</a>
+                </div>
+            </div>
+            
+            <!-- Карточка услуги 2 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="img/samsung-repair.jpg" alt="Ремонт Samsung">
+                </div>
+                <div class="service-content">
+                    <h3>Ремонт Samsung</h3>
+                    <div class="price">от 1700 руб.</div>
+                    <ul class="service-features">
+                        <li>Бесплатная диагностика</li>
+                        <li>Оригинальные запчасти</li>
+                        <li>Гарантия 6 месяцев</li>
+                        <li>Ремонт за 30-60 минут</li>
+                    </ul>
+                    <a href="#" class="btn-service" data-service="Ремонт Samsung">Записаться</a>
+                </div>
+            </div>
+            
+            <!-- Карточка услуги 3 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="img/water-damage.jpg" alt="Ремонт после воды">
+                </div>
+                <div class="service-content">
+                    <h3>Ремонт после воды</h3>
+                    <div class="price">от 2500 руб.</div>
+                    <ul class="service-features">
+                        <li>Бесплатная диагностика</li>
+                        <li>Чистка от коррозии</li>
+                        <li>Гарантия 3 месяца</li>
+                        <li>Срок ремонта 1-3 дня</li>
+                    </ul>
+                    <a href="#" class="btn-service" data-service="Ремонт после воды">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция о нас -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>О нашем сервисном центре</h2>
+                <p>Сервисный центр "Слон" работает на рынке ремонта техники с 2015 года. За это время мы помогли более 5000 клиентов вернуть к жизни их устройства.</p>
+                <p>Наши мастера проходят регулярное обучение и имеют сертификаты от ведущих производителей техники. Мы используем только качественные комплектующие и современное оборудование.</p>
+                
+                <div class="advantages">
+                    <div class="advantage-item">
+                        <span class="advantage-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>Опыт более 8 лет</span>
+                    </div>
+                    <div class="advantage-item">
+                        <span class="advantage-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>Гарантия на работы</span>
+                    </div>
+                    <div class="advantage-item">
+                        <span class="advantage-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>Бесплатная диагностика</span>
+                    </div>
+                    <div class="advantage-item">
+                        <span class="advantage-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>Оригинальные запчасти</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="img/service-center.jpg" alt="Наш сервисный центр">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section class="reviews" id="reviews">
+        <div class="section-title">
+            <h2>Отзывы клиентов</h2>
+        </div>
+        <div class="review-slider">
+            <div class="review-track" id="reviewTrack">
+                <!-- Отзыв 1 -->
+                <div class="review-card">
+                    <div class="review-content">
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Очень доволен качеством ремонта! Заменили экран на iPhone 12 за 40 минут, все работает идеально. Персонал вежливый, объяснили все нюансы. Цены адекватные. Рекомендую!</p>
+                        <div class="review-author">
+                            <img src="img/client1.jpg" alt="Иван Петров" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Иван Петров</h4>
+                                <p>15 марта 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div class="review-card">
+                    <div class="review-content">
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Уронила телефон в воду, думала все - конец. Но в "Слоне" его почистили и восстановили все данные! Работали аккуратно, держали в курсе на каждом этапе. Спасибо большое!</p>
+                        <div class="review-author">
+                            <img src="img/client2.jpg" alt="Елена Смирнова" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Елена Смирнова</h4>
+                                <p>2 февраля 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 3 -->
+                <div class="review-card">
+                    <div class="review-content">
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">Немного задержали ремонт из-за заказа детали, но в итоге все сделали качественно. Порадовала честность - не стали навязывать лишнего, только то, что действительно нужно было починить.</p>
+                        <div class="review-author">
+                            <img src="img/client3.jpg" alt="Алексей Козлов" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Алексей Козлов</h4>
+                                <p>10 января 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+                <div class="slider-dot" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция FAQ -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="section-title">
+                <h2>Частые вопросы</h2>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Сколько времени занимает ремонт?</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Время ремонта зависит от сложности проблемы:</p>
+                        <ul>
+                            <li>Диагностика - 15-30 минут</li>
+                            <li>Замена экрана/батареи - 30-60 минут</li>
+                            <li>Ремонт после воды - 1-3 дня</li>
+                            <li>Ремонт материнской платы - от 1 часа до нескольких дней (если нужен заказ деталей)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Даете ли вы гарантию на ремонт?</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Да, мы предоставляем гарантию на все виды работ:</p>
+                        <ul>
+                            <li>Замена экрана - 6 месяцев</li>
+                            <li>Замена батареи - 3 месяца</li>
+                            <li>Ремонт после воды - 1 месяц</li>
+                            <li>Ремонт платы - 3 месяца</li>
+                        </ul>
+                        <p>Гарантия не распространяется на случаи механических повреждений после ремонта.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Можно ли восстановить данные после поломки?</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>В большинстве случаев - да, если память устройства не повреждена. Мы можем:</p>
+                        <ul>
+                            <li>Скопировать фото, контакты, сообщения</li>
+                            <li>Восстановить данные после сбоя</li>
+                            <li>Извлечь информацию с телефона, который не включается</li>
+                        </ul>
+                        <p>Однако при серьезных физических повреждениях восстановление может быть невозможно.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Что делать, если телефон упал в воду?</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Если телефон упал в воду:</p>
+                        <ol>
+                            <li>Немедленно выключите его</li>
+                            <li>Не заряжайте и не включайте</li>
+                            <li>Вытащите SIM-карту и карту памяти</li>
+                            <li>Промокните салфеткой</li>
+                            <li>Как можно быстрее принесите в сервис</li>
+                        </ol>
+                        <p>Чем быстрее вы обратитесь в сервис, тем выше шанс спасти устройство.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section class="contacts" id="contacts">
+        <div class="contacts-container">
+            <div class="contact-info">
+                <h3>Контакты</h3>
+                
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <div>
+                        <p><strong>Адрес:</strong></p>
+                        <p>ТРЦ Находка Мега, Спортивная улица, 2-2а, 3 этаж, Находка, Приморский край, 692924</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                    <div>
+                        <p><strong>Телефон:</strong></p>
+                        <p><a href="tel:+74236605245">+7 (4236) 60-52-45</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                    <div>
+                        <p><strong>Email:</strong></p>
+                        <p><a href="mailto:info@slon-service.ru">info@slon-service.ru</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                    <div>
+                        <p><strong>Режим работы:</strong></p>
+                        <p>Пн-Пт: 10:00 - 20:00</p>
+                        <p>Сб-Вс: 10:00 - 18:00</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <h3>Остались вопросы?</h3>
+                    <p>Напишите нам, и мы ответим в ближайшее время</p>
+                    
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="img/logo-white.png" alt="Сервисный центр Слон">
+                </div>
+                <p>Сервисный центр "Слон" - профессиональный ремонт техники в Находке с 2015 года. Мы используем только качественные комплектующие и даем гарантию на все виды работ.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Контакты</h3>
+                <p style="color: white;"><i class="fas fa-map-marker-alt"></i> ТРЦ Находка Мега, 3 этаж</p>
+                <p style="color: white;"><i class="fas fa-phone"></i> <a href="tel:+74236605245" style="color: white;">+7 (4236) 60-52-45</a></p>
+                <p style="color: white;"><i class="fas fa-envelope"></i> <a href="mailto:info@slon-service.ru" style="color: white;">info@slon-service.ru</a></p>
+                <p><i class="fas fa-clock"></i> Пн-Пт: 10:00-20:00, Сб-Вс: 10:00-18:00</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Сервисный центр "Слон". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Плавающая кнопка -->
+    <div class="floating-btn">
+        <a href="#" id="floatingBookingBtn">
+            <i class="fas fa-calendar-alt"></i>
+        </a>
+    </div>
+
+    <!-- Модальное окно записи -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeBookingModal">&times;</span>
+            <h2 class="modal-title">Запись на ремонт</h2>
+            
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="bookingName">Ваше имя</label>
+                    <input type="text" id="bookingName" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingPhone">Телефон</label>
+                    <input type="tel" id="bookingPhone" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingEmail">Email</label>
+                    <input type="email" id="bookingEmail" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingService">Услуга</label>
+                    <select id="bookingService" class="form-control" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="Ремонт iPhone">Ремонт iPhone</option>
+                        <option value="Ремонт Samsung">Ремонт Samsung</option>
+                        <option value="Ремонт после воды">Ремонт после воды</option>
+                        <option value="Диагностика">Диагностика</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingDate">Желаемая дата</label>
+                    <input type="date" id="bookingDate" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingTime">Желаемое время</label>
+                    <input type="time" id="bookingTime" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingMessage">Описание проблемы</label>
+                    <textarea id="bookingMessage" class="form-control" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно авторизации -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeLoginModal">&times;</span>
+            <h2 class="modal-title">Вход в личный кабинет</h2>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                
+                <div class="form-group" style="text-align: right;">
+                    <a href="#" id="openForgotPasswordModal" style="font-size: 0.9rem;">Забыли пароль?</a>
+                </div>
+                
+                <button type="submit" class="submit-btn">Войти</button>
+                
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p>Еще нет аккаунта? <a href="#" id="openRegisterModal">Зарегистрироваться</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeRegisterModal">&times;</span>
+            <h2 class="modal-title">Регистрация</h2>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" class="form-control" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p>Уже есть аккаунт? <a href="#" id="openLoginFromRegisterModal">Войти</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно восстановления пароля -->
+    <div class="modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeForgotPasswordModal">&times;</span>
+            <h2 class="modal-title">Восстановление пароля</h2>
+            
+            <form id="forgotPasswordForm">
+                <div class="form-group">
+                    <label for="forgotEmail">Email</label>
+                    <input type="email" id="forgotEmail" class="form-control" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить ссылку</button>
+                
+                <div style="text-align: center; margin-top: 1rem;">
+                    <a href="#" id="openLoginFromForgotModal">Вернуться ко входу</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Слайдер отзывов
+        const reviewTrack = document.getElementById('reviewTrack');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        
+        function updateSlider() {
+            reviewTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentSlide = parseInt(dot.dataset.index);
+                updateSlider();
+            });
+        });
+
+        // FAQ аккордеон
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+                
+                // Закрываем другие открытые вопросы
+                faqQuestions.forEach(q => {
+                    if (q !== question && q.parentElement.classList.contains('active')) {
+                        q.parentElement.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Модальные окна
+        const bookingModal = document.getElementById('bookingModal');
+        const loginModal = document.getElementById('loginModal');
+        const registerModal = document.getElementById('registerModal');
+        const forgotPasswordModal = document.getElementById('forgotPasswordModal');
+        
+        // Открытие модальных окон
+        document.querySelectorAll('#openBookingModalHero, #openBookingModalNav, #floatingBookingBtn, .btn-service').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                bookingModal.style.display = 'flex';
+                
+                // Если клик был по кнопке услуги, устанавливаем соответствующую услугу в селект
+                if (btn.classList.contains('btn-service')) {
+                    const service = btn.dataset.service;
+                    document.getElementById('bookingService').value = service;
+                }
+            });
+        });
+        
+        document.getElementById('openLoginModal').addEventListener('click', (e) => {
+            e.preventDefault();
+            loginModal.style.display = 'flex';
+        });
+        
+        document.getElementById('openRegisterModal').addEventListener('click', (e) => {
+            e.preventDefault();
+            loginModal.style.display = 'none';
+            registerModal.style.display = 'flex';
+        });
+        
+        document.getElementById('openLoginFromRegisterModal').addEventListener('click', (e) => {
+            e.preventDefault();
+            registerModal.style.display = 'none';
+            loginModal.style.display = 'flex';
+        });
+        
+        document.getElementById('openForgotPasswordModal').addEventListener('click', (e) => {
+            e.preventDefault();
+            loginModal.style.display = 'none';
+            forgotPasswordModal.style.display = 'flex';
+        });
+        
+        document.getElementById('openLoginFromForgotModal').addEventListener('click', (e) => {
+            e.preventDefault();
+            forgotPasswordModal.style.display = 'none';
+            loginModal.style.display = 'flex';
+        });
+        
+        // Закрытие модальных окон
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', () => {
+                bookingModal.style.display = 'none';
+                loginModal.style.display = 'none';
+                registerModal.style.display = 'none';
+                forgotPasswordModal.style.display = 'none';
+            });
+        });
+        
+        // Закрытие при клике вне модального окна
+        window.addEventListener('click', (e) => {
+            if (e.target === bookingModal) bookingModal.style.display = 'none';
+            if (e.target === loginModal) loginModal.style.display = 'none';
+            if (e.target === registerModal) registerModal.style.display = 'none';
+            if (e.target === forgotPasswordModal) forgotPasswordModal.style.display = 'none';
+        });
+
+        // Формы
+        document.getElementById('bookingForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Ваша заявка принята! Мы свяжемся с вами для подтверждения записи.');
+            bookingModal.style.display = 'none';
+        });
+        
+        document.getElementById('feedbackForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Спасибо за ваше сообщение! Мы ответим вам в ближайшее время.');
+            document.getElementById('feedbackForm').reset();
+        });
+        
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Здесь должна быть логика авторизации
+            alert('Вход выполнен успешно!');
+            loginModal.style.display = 'none';
+            
+            // Показываем ссылку на личный кабинет
+            document.getElementById('accountLink').style.display = 'block';
+        });
+        
+        document.getElementById('registerForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Здесь должна быть логика регистрации
+            alert('Регистрация прошла успешно! Теперь вы можете войти.');
+            registerModal.style.display = 'none';
+            loginModal.style.display = 'flex';
+        });
+        
+        document.getElementById('forgotPasswordForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Здесь должна быть логика восстановления пароля
+            alert('Ссылка для восстановления пароля отправлена на ваш email.');
+            forgotPasswordModal.style.display = 'none';
+        });
+
+        // Установка минимальной даты для записи (текущий день)
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('bookingDate').min = today;
+    </script>
+</body>
+</html>
